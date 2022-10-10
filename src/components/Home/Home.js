@@ -5,6 +5,9 @@ import CountryList from '../CountryList/CountryList';
 import style from './Home.module.css';
 
 function Home() {
+  const dispatch = useDispatch();
+  const countries = useSelector((state) => state.countries);
+  const [filter, setFilter] = useState(countries);
   const filterCountries = (e) => {
     const target = e.target.value;
     if (target === 'all') {
@@ -12,11 +15,8 @@ function Home() {
     } else {
       setFilter(countries.filter((el) => el.region === target));
     }
-    console.log(e.target.value);
   };
-  const dispatch = useDispatch();
-  const countries = useSelector((state) => state.countries);
-  const [filter, setFilter] = useState(countries);
+
   useEffect(
     () => { dispatch(getCountries()); setFilter(null); },
     [dispatch],

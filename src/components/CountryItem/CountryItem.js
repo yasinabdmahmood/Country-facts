@@ -1,19 +1,24 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './style.module.css';
 import spareFlag from '../../assets/images/spareFalg.svg';
 
 function CountryItem(props) {
-  const { country } = props;
+  const { country, st } = props;
+  const styleObj = {
+    backgroundColor: st,
+  };
   return (
-    <div className={style.container}>
+    <div className={style.container} style={styleObj}>
       <h1>{country.name}</h1>
       <div>
         <img
           src={country.flag}
           alt="flag"
           onError={({ currentTarget }) => {
-            currentTarget.onerror = null;
-            currentTarget.src = spareFlag;
+            const image = currentTarget;
+            image.onerror = null;
+            image.src = spareFlag;
           }}
         />
       </div>
@@ -30,4 +35,10 @@ function CountryItem(props) {
     </div>
   );
 }
+
+CountryItem.propTypes = {
+  country: PropTypes.objectOf(PropTypes.string).isRequired,
+  st: PropTypes.string.isRequired,
+};
+
 export default CountryItem;
