@@ -26,7 +26,8 @@ export const countriesSlice = createSlice({
         name: el.name,
         capital: el.capital,
         flag: el.flags.svg,
-        timezones: el.timezones[0],
+        timezone: el.timezones[0],
+        region: el.region,
       }));
       return listOfCountries;
     });

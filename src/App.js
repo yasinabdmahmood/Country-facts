@@ -1,17 +1,11 @@
 import './App.css';
-import { useDispatch } from 'react-redux';
-import { getCountries } from './redux/contries/countries';
+import Home from './components/Home/Home';
 
 function App() {
-  const dispatch = useDispatch();
   return (
     <div className="App">
-      <button
-        type="submit"
-        onClick={() => dispatch(getCountries())}
-      >
-        click me
-      </button>
+      <Home />
+
     </div>
   );
 }
