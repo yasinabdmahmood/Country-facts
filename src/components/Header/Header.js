@@ -8,7 +8,7 @@ import threeDots from '../../assets/images/threeDots.svg';
 function Header() {
   return (
 
-    <div className={style.header}>
+    <div className={style.header} data-testid='header-container'>
       <Link to="/">
         <img src={left} alt="left arrow" />
       </Link>
