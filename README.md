@@ -21,11 +21,11 @@
 
 ## Live Demo
 
-- live demo: [Click here](https://drive.google.com/file/d/1VvIjeALtPvCYoudo-fFKRO6J01mEHtho/view?usp=sharing)
+- live demo: [Click here](https://tubular-cupcake-f62e8d.netlify.app)
 
 ### Video Link
 
-- [Click here](#)
+- [Click here](https://drive.google.com/file/d/1VvIjeALtPvCYoudo-fFKRO6J01mEHtho/view?usp=sharing)
 
 ## Getting Started
 
