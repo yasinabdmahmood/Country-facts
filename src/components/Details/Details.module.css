@@ -38,6 +38,8 @@
   font-size: large;
   color: white;
   flex-grow: 1;
-  padding: 2rem;
+  padding: 2rem 0rem;
   box-sizing: border-box;
 }
+
+
