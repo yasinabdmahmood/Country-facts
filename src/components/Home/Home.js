@@ -23,7 +23,6 @@ function Home() {
   );
   return (
     <div>
-      <div className={style.header}>Country facts</div>
       <div className={style.dropDown}>
         <select
           name="drop-down"
