@@ -1,7 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Puritan&display=swap');
+
+.link {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.link img {
+  width: 2rem;
+}
 
 .container {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -22,13 +33,15 @@
 }
 
 .container h1 {
-  font-size: large;
-  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  font-family: 'Puritan', sans-serif;
+  color: white;
 }
 
 .container h2 {
   font-size: medium;
   font-family: 'Lato', sans-serif;
+  color: white;
 }
 
 @media only screen and (max-width: 700px) {
