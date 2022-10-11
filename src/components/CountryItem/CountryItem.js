@@ -14,7 +14,7 @@ function CountryItem(props) {
     backgroundColor: st,
   };
   return (
-    <div className={style.container} style={styleObj}>
+    <div className={style.container} style={styleObj} data-testid="component-container">
       <Link onClick={() => dispath(getDetials(country.name))} className={style.link} to="/details">
         <img src={arrow} alt="arrow" />
       </Link>
