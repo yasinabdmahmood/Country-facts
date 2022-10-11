@@ -11,7 +11,7 @@ function Details() {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   }, []);
   return (
-    <div className={style.container}>
+    <div className={style.container} data-testid='details-container'>
       <img src={details.flag} alt="Flag" />
       <h2>{details.name}</h2>
       <div>

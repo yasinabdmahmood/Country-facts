@@ -2,22 +2,17 @@ import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import CountryItem from '../CountryItem/CountryItem';
+import Details from '../Details/Details';
 import store from '../../redux/configureStore';
 import '@testing-library/jest-dom';
 
-it('Check if Item component has changed', () => {
-  const country = {
-    name: 'Iraq',
-    capital: 'Bagdad',
-    flag: 'https//flag',
-    timezone: 'utc+1',
-  };
+
+it('Check if the component has changed', async () => {
+ 
   const tree = renderer.create(
     <Provider store={store}>
       <BrowserRouter>
-        <CountryItem country={country} />
-        ,
+             <Details  />
       </BrowserRouter>
     </Provider>,
   ).toJSON();
@@ -25,19 +20,13 @@ it('Check if Item component has changed', () => {
 });
 
 it('Check if the component container is there', async () => {
-  const country = {
-    name: 'Iraq',
-    capital: 'Bagdad',
-    flag: 'https//flag',
-    timezone: 'utc+1',
-  };
   render(
     <Provider store={store}>
       <BrowserRouter>
-        <CountryItem country={country} />
+        <Details />
       </BrowserRouter>
     </Provider>,
   );
-  const container = await screen.findByTestId('component-container');
+  const container = await screen.findByTestId('details-container');
   expect(container).toBeInTheDocument();
 });
