@@ -5,8 +5,9 @@ import { Provider } from 'react-redux';
 import CountryList from '../CountryList/CountryList';
 import store from '../../redux/configureStore';
 import '@testing-library/jest-dom';
+
 const countries = [
-    {
+  {
     name: 'Iraq',
     capital: 'Bagdad',
     flag: 'https//flag',
@@ -17,11 +18,10 @@ const countries = [
     capital: 'Bagdad',
     flag: 'https//flag',
     timezone: 'utc+1',
-  }
+  },
 ];
 
 it('Check if the component has changed', () => {
- 
   const tree = renderer.create(
     <Provider store={store}>
       <BrowserRouter>
@@ -34,7 +34,7 @@ it('Check if the component has changed', () => {
 });
 
 it('Check if the component container is there', async () => {
- render(
+  render(
     <Provider store={store}>
       <BrowserRouter>
         <CountryList countries={countries} />

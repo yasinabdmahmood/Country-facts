@@ -18,6 +18,7 @@ Array [
     >
       <img
         alt="arrow"
+        data-testid="go-to-details"
         src="arrow.svg"
       />
     </a>

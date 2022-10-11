@@ -16,7 +16,7 @@ function CountryItem(props) {
   return (
     <div className={style.container} style={styleObj} data-testid="component-container">
       <Link onClick={() => dispath(getDetials(country.name))} className={style.link} to="/details">
-        <img src={arrow} alt="arrow" />
+        <img src={arrow} alt="arrow" data-testid="go-to-details" />
       </Link>
       <h1>{country.name}</h1>
       <div>

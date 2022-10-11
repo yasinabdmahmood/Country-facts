@@ -6,13 +6,11 @@ import Header from '../Header/Header';
 import store from '../../redux/configureStore';
 import '@testing-library/jest-dom';
 
-
 it('Check if the component has changed', () => {
- 
   const tree = renderer.create(
     <Provider store={store}>
       <BrowserRouter>
-        <Header  />
+        <Header />
         ,
       </BrowserRouter>
     </Provider>,

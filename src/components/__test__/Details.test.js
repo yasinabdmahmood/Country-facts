@@ -6,13 +6,11 @@ import Details from '../Details/Details';
 import store from '../../redux/configureStore';
 import '@testing-library/jest-dom';
 
-
 it('Check if the component has changed', async () => {
- 
   const tree = renderer.create(
     <Provider store={store}>
       <BrowserRouter>
-             <Details  />
+        <Details />
       </BrowserRouter>
     </Provider>,
   ).toJSON();

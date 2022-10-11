@@ -34,7 +34,7 @@ it('Check if the component container is there', async () => {
   render(
     <Provider store={store}>
       <BrowserRouter>
-        <CountryItem country={country} />
+        <CountryItem country={country} st="red" />
       </BrowserRouter>
     </Provider>,
   );
