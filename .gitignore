@@ -23,6 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 #linter files
-.stylelintrc.json
-.eslintrc.json
-.babelrc
+# .stylelintrc.json
+# .eslintrc.json
+# .babelrc

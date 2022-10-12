@@ -32,7 +32,26 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.scroll-up {
+  position: fixed;
+  width: 3rem;
+  bottom: 3%;
+  right: 3%;
+  z-index: 5;
+}
+
+.hide {
+  display: none;
+}
+
+.btn {
+  position: absolute;
+  background-color: transparent;
+  border: 0;
 }
