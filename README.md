@@ -67,7 +67,7 @@ Type this command into the terminal:
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, [issues](https://github.com/yasinabdmahmood/Country-facts/issues), and feature requests are welcome!
 
 ## Show your support
 
