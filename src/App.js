@@ -31,7 +31,7 @@ function App() {
   }, []);
   return (
     <div className="App" data-testid="app-container">
-      <button type="submit" onClick={scroll}>
+      <button type="submit" onClick={scroll} className="btn">
         <img src={scrollUp} alt="scroll-up" className={arrowCalss} />
       </button>
 

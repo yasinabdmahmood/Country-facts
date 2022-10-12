@@ -49,3 +49,9 @@
 .hide {
   display: none;
 }
+
+.btn {
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+}

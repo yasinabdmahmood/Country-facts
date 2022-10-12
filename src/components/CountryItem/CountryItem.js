@@ -18,7 +18,7 @@ function CountryItem(props) {
       <Link onClick={() => dispath(getDetials(country.name))} className={style.link} to="/details">
         <img src={arrow} alt="arrow" data-testid="go-to-details" />
       </Link>
-      <h1>{country.name}</h1>
+
       <div>
         <img
           src={country.flag}
@@ -30,14 +30,8 @@ function CountryItem(props) {
           }}
         />
       </div>
+      <h1>{country.name}</h1>
       <h2>
-        Capital :
-        {country.capital}
-      </h2>
-      <h2>
-        Timezone :
-        <br />
-        {' '}
         {country.timezone}
       </h2>
     </div>
